@@ -1,25 +1,22 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import NavBar from "./Components/NavBar/Nav-Bar";
+import ShelfA from "./Components/ShelfA/Shelf-A";
+import ShelfB from "./Components/ShelfB/Shelf-B";
+import ShelfC from "./Components/ShelfC/Shelf-C";
+import ShelfD from "./Components/ShelfD/Shelf-D";
+import "./App.css";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <NavBar />
+        <div>
+          <button className="shelf-button">Shelf A</button>
+          <button className="shelf-button">Shelf B</button>
+          <button className="shelf-button">Shelf C</button>
+          <button className="shelf-button">Shelf D</button>
+        </div>
       </div>
     );
   }
