@@ -1,0 +1,14 @@
+.nav-bar {
+  margin: 0;
+  height: 75px;
+  width: 100vw;
+  background-color: #ab2a19;
+}
+
+.shelfie {
+  margin: 0;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  text-transform: capitalize;
+}
