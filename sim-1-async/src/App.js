@@ -11,16 +11,21 @@ class App extends Component {
         <div className="App">
           <NavBar />
           <br />
-          <h1> title page</h1>
-          <Link to="/shelfa">Shelf A</Link>
-          <Link to="/shelfb">Shelf B</Link>
-          <Link to="/shelfc">Shelf C</Link>
-          <Link to="/shelfd">Shelf D</Link>
           {routes}
-          {/* <button className="shelf-button">Shelf A</button>
-          <button className="shelf-button">Shelf B</button>
-          <button className="shelf-button">Shelf C</button>
-          <button className="shelf-button">Shelf D</button> */}
+          <div className="shelf-nav">
+            <Link className="shelf-button" to="/shelfa">
+              Shelf A
+            </Link>
+            <Link className="shelf-button" to="/shelfb">
+              Shelf B
+            </Link>
+            <Link className="shelf-button" to="/shelfc">
+              Shelf C
+            </Link>
+            <Link className="shelf-button" to="/shelfd">
+              Shelf D
+            </Link>
+          </div>
         </div>
       </HashRouter>
     );
